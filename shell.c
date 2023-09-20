@@ -12,9 +12,9 @@ int main(int ac, char **argv)
 
 	(void)ac; (void)argv;
 
-	printf("%s", prompt);
+	write(STDOUT_FILENO, prompt, strlen(prompt));
 	getline(&get_line, &n, stdin);
-	printf("%s\n", get_line);
+	write(STDOUT_FILENO, get_line, strlen(get_line));
 
 	free(get_line);
 	return (0);
