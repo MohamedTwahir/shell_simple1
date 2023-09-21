@@ -10,8 +10,8 @@ void execmd(char **argv){
         /* execute the command with execve */
         if (execve(command, argv, NULL) == -1)
         {
-            perror("./shell:");
+            perror("./shell:\n");
         }
     }
-    puts("");
+    
 }
