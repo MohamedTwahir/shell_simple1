@@ -7,7 +7,7 @@
 int main(int ac, char **argv)
 {
 	char *prompt = "#cisfun$ ";
-	char *get_line;
+	char *get_line; //stores the address of the buffer holding whatever was typed
 	size_t n = 0;
 
 	(void)ac; (void)argv;
